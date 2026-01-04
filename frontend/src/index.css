@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism Utility */
+.glass-panel {
+  background: rgba(20, 20, 20, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Text Gradient Utility */
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A5A5A5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Domain Gradients */
+.gradient-b2b {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.gradient-healthcare {
+  background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+.gradient-ai {
+  background: linear-gradient(135deg, #240b36 0%, #c31432 100%);
+}
+
+.gradient-finance {
+  background: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+}
+
+.gradient-education {
+  background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
+}
+
+.gradient-legal {
+  background: linear-gradient(135deg, #302b63 0%, #24243e 100%);
+}
+
+/* Default fallback gradient */
+.gradient-default {
+  background: linear-gradient(135deg, #232526 0%, #414345 100%);
+}
+
+/* Glow Effects */
+.glow-hover {
+  transition: all 0.3s ease;
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
+  transform: translateY(-4px);
+}
