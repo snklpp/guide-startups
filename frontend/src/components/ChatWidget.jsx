@@ -15,7 +15,7 @@ import axios from 'axios';
 import { v4 as uuidv4 } from 'uuid';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import API_URL from '../config';
+import API_BASE_URL from '../config';
 
 // Search Animation Component
 const SearchAnimation = () => {
@@ -193,7 +193,7 @@ const ChatWidget = ({ idea }) => {
         setIsSearching(true);
 
         try {
-            const res = await axios.post(`${API_URL} /api/chat`, {
+            const res = await axios.post(`${API_BASE_URL}/api/chat`, {
                 session_id: sessionId,
                 message: userMsg.content,
                 idea_context: {
